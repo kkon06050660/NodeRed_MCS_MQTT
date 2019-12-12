@@ -1,0 +1,8 @@
+[{"id":"13833a7e.7b88a6","type":"tab","label":"Flow2_GetData_Gauge","disabled":false,"info":""},
+{"id":"1ffd339b.7b434c","type":"mqtt in","z":"13833a7e.7b88a6","name":"","topic":"mcs/DyC3n5DY/2jfe4RaoWBCOdwkv/+","qos":"2","datatype":"auto","broker":"26679a5d.2a2546","x":190,"y":160,"wires":[["d34a1331.5d1ac"]]},
+{"id":"d34a1331.5d1ac","type":"csv","z":"13833a7e.7b88a6","name":"","sep":",","hdrin":"","hdrout":"","multi":"one","ret":"\\n","temp":",,Data","skip":"0","x":210,"y":200,"wires":[["46adb5b7.a87d8c"]]},
+{"id":"46adb5b7.a87d8c","type":"change","z":"13833a7e.7b88a6","name":"Get Data","rules":[{"t":"set","p":"payload","pt":"msg","to":"payload.Data","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":220,"y":240,"wires":[["4a1f7009.6ec96"]]},
+{"id":"4a1f7009.6ec96","type":"ui_gauge","z":"13833a7e.7b88a6","name":"","group":"e5a62c38.9b033","order":0,"width":0,"height":0,"gtype":"gage","title":"gauge","label":"units","format":"{{value}}","min":0,"max":"50","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":210,"y":280,"wires":[]},
+{"id":"26679a5d.2a2546","type":"mqtt-broker","z":"","name":"","broker":"mqtt.mcs.mediatek.com","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","closeTopic":"","closeQos":"0","closePayload":"","willTopic":"","willQos":"0","willPayload":""},
+{"id":"e5a62c38.9b033","type":"ui_group","z":"","name":"Status","tab":"3dbdc0d6.60957","order":1,"disp":true,"width":"6","collapse":false},
+{"id":"3dbdc0d6.60957","type":"ui_tab","name":"Tab 1","icon":"dashboard","order":1}]
