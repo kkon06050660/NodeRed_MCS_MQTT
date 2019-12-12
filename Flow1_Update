@@ -1,0 +1,8 @@
+[{"id":"8907b802.3f8808","type":"tab","label":"Flow1_Update","disabled":false,"info":""},
+{"id":"9d8c859d.862548","type":"inject","z":"8907b802.3f8808","name":"","topic":"","payload":",,20.5","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":170,"y":200,"wires":[["6c626d33.fbf154"]]},
+{"id":"597dd171.4f2a9","type":"inject","z":"8907b802.3f8808","name":"","topic":"","payload":",,30.3","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":170,"y":240,"wires":[["6c626d33.fbf154"]]},
+{"id":"6c626d33.fbf154","type":"mqtt out","z":"8907b802.3f8808","name":"","topic":"mcs/DyC3n5DY/2jfe4RaoWBCOdwkv/Temperature","qos":"2","retain":"","broker":"26679a5d.2a2546","x":570,"y":220,"wires":[]},
+{"id":"3ce173cf.3f78ec","type":"inject","z":"8907b802.3f8808","name":"","topic":"","payload":",,17","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":170,"y":300,"wires":[["65b46b3e.9e8814"]]},
+{"id":"c6577bd8.c52eb8","type":"inject","z":"8907b802.3f8808","name":"","topic":"","payload":",,86","payloadType":"str","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":170,"y":340,"wires":[["65b46b3e.9e8814"]]},
+{"id":"65b46b3e.9e8814","type":"mqtt out","z":"8907b802.3f8808","name":"","topic":"mcs/DyC3n5DY/2jfe4RaoWBCOdwkv/Humidity","qos":"2","retain":"","broker":"26679a5d.2a2546","x":560,"y":320,"wires":[]},
+{"id":"26679a5d.2a2546","type":"mqtt-broker","z":"","name":"","broker":"mqtt.mcs.mediatek.com","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","closeTopic":"","closeQos":"0","closePayload":"","willTopic":"","willQos":"0","willPayload":""}]
